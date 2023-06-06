@@ -11,32 +11,18 @@ import deved from "../../public/dev-ed-wave.png"
 import design from "../../public/design.png"
 import code from "../../public/code.png"
 import consulting from "../../public/consulting.png"
-import web1 from "../../public/web1.png"
-import web2 from "../../public/web2.png"
-import web3 from "../../public/web3.png"
-import web4 from "../../public/web4.png"
-import web5 from "../../public/web5.png"
-import web6 from "../../public/web6.png"
 import img1 from "../../public/img1.png"
-import img2 from "../../public/img2.png"
 import img3 from "../../public/img3.png"
 import img5 from "../../public/img5.png"
 import img6 from "../../public/img6.png"
 import img10 from "../../public/img10.png"
-import img11 from "../../public/img11.png"
 import img12 from "../../public/img12.png"
-import {useState} from "react"
 
 export default function Home() {
-  const [darkMode, setDarkMode] = useState(false);
-
-  const toggleDarkMode = () => {
-    setDarkMode(!darkMode);
-  };
 
   return (
-    <div className={darkMode ? "dark" : ""}>
-          <main className="bg-white px-10 pb-24 md:px-20 lg:px-40 dark:bg-gray-900">
+    <div>
+          <main className="bg-white px-10 pb-24 md:px-20 lg:px-40 ">
             <section className=" min-h-screen">
                 <nav className="py-10 mb-12 flex justify-between">
                     <h1 className="text-xl font-burtons">Desenvolvido por Gabriel O.</h1>
