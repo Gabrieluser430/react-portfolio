@@ -17,26 +17,33 @@ import img5 from "../../public/img5.png"
 import img6 from "../../public/img6.png"
 import img10 from "../../public/img10.png"
 import img12 from "../../public/img12.png"
+import {useState} from "react"
 
 export default function Home() {
 
+  const [darkMode, setDarkMode] = useState(false)
+
+  const toggleDarkMode = () => {
+    setDarkMode(!darkMode)
+  }
+
   return (
-    <div>
-          <main className="bg-white px-10 pb-24 md:px-20 lg:px-40 ">
+    <div className={darkMode ? "dark" : ""}>
+          <main className="bg-white px-10 pb-24 md:px-20 lg:px-40 dark:bg-gray-800">
             <section className=" min-h-screen">
                 <nav className="py-10 mb-12 flex justify-between">
-                    <h1 className="text-xl font-burtons">Desenvolvido por Gabriel O.</h1>
+                    <h1 className="text-xl font-burtons dark:text-gray-200">Desenvolvido por Gabriel O.</h1>
                     <ul className="flex items-center">
-                        <li><BsFillMoonStarsFill className="cursor-pointer tx-xl"/></li>
+                        <li className="cursor-pointer" onClick={toggleDarkMode}><BsFillMoonStarsFill className="dark:text-gray-200"/></li>
                         <li><a className="bg-gradient-to-r from-cyan-500 to-teal-500 text-white px-4 py-2 rounded ml-8" href="https://docs.google.com/document/d/1vF95p-E2o0XfHFRLDHhQqMaybcZIv79k/edit?usp=sharing&ouid=117072219727443763501&rtpof=true&sd=true" target="_blank">Currículo</a></li>
                     </ul>
                 </nav>
                 <div className="text-center p-10">
-                  <h2 className="text-4xl py-2 text-teal-600 font-medium md:text-6xl">Gabriel Oliveira</h2>
-                  <h3 className="text-2xl py-2 md:text-3xl">Desenvolvedor Front-end</h3>
-                  <p className="text-md py-5 leading-8 text-gray-800 md:text-xl max-w-lg mx-auto">Freelancer fornecendo serviços para programação e design. Junte-se a mim abaixo e vamos começar!</p>
+                  <h2 className="text-4xl py-2 text-teal-600 font-medium md:text-6xl dark:text-teal-400">Gabriel Oliveira</h2>
+                  <h3 className="text-2xl py-2 md:text-3xl dark:text-gray-200">Desenvolvedor Front-end</h3>
+                  <p className="text-md py-5 leading-8 text-gray-800 md:text-xl max-w-lg mx-auto dark:text-gray-200">Desenvolvedor e contribuidor de open-source. Junte-se a mim abaixo e vamos começar!</p>
               </div>
-              <div className="text-5xl flex justify-center gap-16 py-3 text-gray-600">
+              <div className="text-5xl flex justify-center gap-16 py-3 text-gray-600 dark:text-gray-200">
                 <AiFillGithub />
                 <AiFillLinkedin />
                 <AiFillTwitterCircle />
@@ -48,17 +55,17 @@ export default function Home() {
 
             <section>
               <div>
-                <h3 className="text-3xl py-1">Sobre mim</h3>
-                <p className="text-md py-2 leading-8 text-gray-800">
-                  Meu nome é Gabriel, estudante de <span className="text-teal-500">ciências da computação</span>, com 
+                <h3 className="text-3xl py-1 dark:text-gray-200">Sobre mim</h3>
+                <p className="text-md py-2 leading-8 text-gray-800 dark:text-gray-200">
+                  Meu nome é Gabriel, estudante de <span className="text-teal-500 dark:text-teal-300">ciências da computação</span>, com 
                   grande interesse em adquirir experiência na área 
-                  de <span className="text-teal-500">front-end</span> por 
-                  meio de um <span className="text-teal-500">estágio</span>. 
+                  de <span className="text-teal-500 dark:text-teal-400">front-end</span> por 
+                  meio de um <span className="text-teal-500 dark:text-teal-400">estágio</span>. 
                   Tenho fascínio em compreender como as ferramentas
                   utilizadas nessa área solucionam problemas reais, o que desperta ainda
                   mais minha motivação para explorar e aprimorar minhas habilidades. 
                 </p>
-                <p className="text-md py-2 leading-8 text-gray-800">
+                <p className="text-md py-2 leading-8 text-gray-800 dark:text-gray-200">
                   Ofereço uma ampla gama de serviços, incluindo design de marca,
                   programação e ensino.
                 </p>
@@ -66,50 +73,50 @@ export default function Home() {
               <div className="lg:flex gap-10">
                 <div className=" text-center shadow-lg p-10 rounded-xl my-10">
                   <Image src={design} width={100} height={100} className="mx-auto" />
-                  <h3 className="text-lg font-medium pt-8 pb-2">Designs bonitos</h3>
-                  <p className="py-2">
+                  <h3 className="text-lg font-medium pt-8 pb-2 dark:text-gray-200">Designs bonitos</h3>
+                  <p className="py-2 dark:text-gray-200">
                   Criação de designs elegantes e responsivos utilizando o Mobile First approach.
                   </p>
-                  <h4 className="py-4 text-teal-600">Ferramentas que utilizo</h4>
-                  <p className="text-gray-800 py-1">HTML5</p>
-                  <p className="text-gray-800 py-1">CSS3</p>
-                  <p className="text-gray-800 py-1">Bootstrap</p>
-                  <p className="text-gray-800 py-1">tailwindCSS</p>
-                  <p className="text-gray-800 py-1">Sass</p>
+                  <h4 className="py-4 text-teal-600 dark:text-teal-400">Ferramentas que utilizo</h4>
+                  <p className="text-gray-800 py-1 dark:text-gray-200">HTML5</p>
+                  <p className="text-gray-800 py-1 dark:text-gray-200">CSS3</p>
+                  <p className="text-gray-800 py-1 dark:text-gray-200">Bootstrap</p>
+                  <p className="text-gray-800 py-1 dark:text-gray-200">tailwindCSS</p>
+                  <p className="text-gray-800 py-1 dark:text-gray-200">Sass</p>
                 </div>
 
                 <div className=" text-center shadow-lg p-10 rounded-xl my-10">
                   <Image src={code} width={100} height={100} className="mx-auto" />
-                  <h3 className="text-lg font-medium pt-8 pb-2">Programação</h3>
-                  <p className="py-2">
+                  <h3 className="text-lg font-medium pt-8 pb-2 dark:text-gray-200">Programação</h3>
+                  <p className="py-2 dark:text-gray-200">
                   Ferramentas que utilizo 
                   para o desenvolvimento de funcionalidades e interatividade nos projetos.
                   </p>
-                  <h4 className="py-4 text-teal-600">Ferramentas que utilizo</h4>
-                  <p className="text-gray-800 py-1">JavaScript</p>
-                  <p className="text-gray-800 py-1">React</p>
-                  <p className="text-gray-800 py-1">Vite e Next.js (building e scaffolding)</p>
+                  <h4 className="py-4 text-teal-600 dark:text-teal-400">Ferramentas que utilizo</h4>
+                  <p className="text-gray-800 py-1 dark:text-gray-200">JavaScript</p>
+                  <p className="text-gray-800 py-1 dark:text-gray-200">React</p>
+                  <p className="text-gray-800 py-1 dark:text-gray-200">Vite e Next.js (building e scaffolding)</p>
                 </div>
 
                 <div className=" text-center shadow-lg p-10 rounded-xl my-10">
                   <Image src={consulting} width={100} height={100} className="mx-auto" />
-                  <h3 className="text-lg font-medium pt-8 pb-2">Outros</h3>
-                  <p className="py-2"> Alguns conhecimentos extras de tecnologias, habilidades e 
+                  <h3 className="text-lg font-medium pt-8 pb-2 dark:text-gray-200">Outros</h3>
+                  <p className="py-2 dark:text-gray-200"> Alguns conhecimentos extras de tecnologias, habilidades e 
                   ferramentas que estou estudando.</p>
-                  <h4 className="py-4 text-teal-600">Habilidades e ferramentas</h4>
-                  <p className="text-gray-800 py-1">Inglês avançado</p>
-                  <p className="text-gray-800 py-1">Git e GitHub</p>
-                  <p className="text-gray-800 py-1">Linux</p>
-                  <p className="text-gray-800 py-1">Java (estudando)</p>
-                  <p className="text-gray-800 py-1">Vue (estudando)</p>
+                  <h4 className="py-4 text-teal-600 dark:text-teal-4 dark:text-teal-400">Habilidades e ferramentas</h4>
+                  <p className="text-gray-800 py-1 dark:text-gray-200">Inglês avançado</p>
+                  <p className="text-gray-800 py-1 dark:text-gray-200">Git e GitHub</p>
+                  <p className="text-gray-800 py-1 dark:text-gray-200">Linux</p>
+                  <p className="text-gray-800 py-1 dark:text-gray-200">Java (estudando)</p>
+                  <p className="text-gray-800 py-1 dark:text-gray-200">Vue (estudando)</p>
                 </div>
               </div>
             </section>
 
             <section>
               <div className="py-10">
-                <h3 className="text-3xl py-1">Portfólio</h3>
-                  <p className="text-md py-2 leading-8 text-gray-800">
+                <h3 className="text-3xl py-1 dark:text-gray-200">Portfólio</h3>
+                  <p className="text-md py-2 leading-8 text-gray-800 dark:text-gray-200">
                   Estes são os projetos que compõem o meu portfólio. Acredito firmemente que o aprendizado das tecnologias ocorre por meio da prática. Ao longo desses projetos, mergulhei em uma ampla gama de desafios, explorando diferentes habilidades e aplicando diversas tecnologias. Cada projeto foi uma oportunidade de aprender, aprimorar minhas habilidades e buscar soluções inovadoras
                 </p>
               </div>
