@@ -17,6 +17,7 @@ import img5 from "../../public/img5.png"
 import img6 from "../../public/img6.png"
 import img10 from "../../public/img10.png"
 import img12 from "../../public/img12.png"
+import img14 from "../../public/img14.png"
 import {useState} from "react"
 
 export default function Home() {
@@ -44,8 +45,8 @@ export default function Home() {
                   <p className="text-md py-5 leading-8 text-gray-800 md:text-xl max-w-lg mx-auto dark:text-gray-200">Desenvolvedor e contribuidor de open-source. Junte-se a mim abaixo e vamos começar!</p>
               </div>
               <div className="text-5xl flex justify-center gap-16 py-3 text-gray-600 dark:text-gray-200">
-                <AiFillGithub />
-                <AiFillLinkedin />
+                <a href="https://github.com/Gabrieluser430" target="_blank"><AiFillGithub /></a>
+                <a href="https://www.linkedin.com/in/gabrielobarbieri/" target="_blank"><AiFillLinkedin /></a>
                 <AiFillTwitterCircle />
               </div>
               <div className="relative mx-auto bg-gradient-to-b from-teal-500 rounded-full w-80 h-80 mt-20 overflow-hidden md:h-96 md:w-96">
@@ -120,7 +121,7 @@ export default function Home() {
                   Estes são os projetos que compõem o meu portfólio. Acredito firmemente que o aprendizado das tecnologias ocorre por meio da prática. Ao longo desses projetos, mergulhei em uma ampla gama de desafios, explorando diferentes habilidades e aplicando diversas tecnologias. Cada projeto foi uma oportunidade de aprender, aprimorar minhas habilidades e buscar soluções inovadoras
                 </p>
               </div>
-              <div className="grid grid-cols-1 gap-10 lg:grid-cols-2">
+              <div className="grid grid-cols-1 gap-10 lg:grid-cols-2 xl:grid-cols-3">
                 <div className="w-full aspect-w-1 aspect-h-1">
                   <a href="https://gabrieluser430.github.io/javascript-calculator/" target="_blank">
                    <Image src={img6} className="rounded-lg object-cover w-full h-full" />
@@ -132,8 +133,8 @@ export default function Home() {
                   </a>
                 </div>
                 <div className="w-full aspect-w-1 aspect-h-1">
-                  <a href="https://jolly-strudel-57a01f.netlify.app/" target="_blank">
-                   <Image src={img1} className="rounded-lg object-cover w-full h-full" />
+                  <a href="https://newsletter-frontform.vercel.app/" target="_blank">
+                   <Image src={img14} className="rounded-lg object-cover w-full h-full" />
                   </a>
                 </div>
                 <div className="w-full aspect-w-1 aspect-h-1">
@@ -142,13 +143,13 @@ export default function Home() {
                   </a>
                 </div>
                 <div className="w-full aspect-w-1 aspect-h-1">
-                  <a href="https://moonlit-bombolone-c6e68a.netlify.app/" target="_blank">
-                  <Image src={img3} className="rounded-lg object-cover w-full h-full" />
+                  <a href="https://jolly-strudel-57a01f.netlify.app" target="_blank">
+                  <Image src={img1} className="rounded-lg object-cover w-full h-full" />
                   </a>
                 </div>
                 <div className="w-full aspect-w-1 aspect-h-1">
-                  <a href="https://gabrieluser430.github.io/tour-site/" target="_blank">
-                  <Image src={img12} className="rounded-lg object-cover w-full h-full" />
+                  <a href="https://moonlit-bombolone-c6e68a.netlify.app/" target="_blank">
+                  <Image src={img3} className="rounded-lg object-cover w-full h-full" />
                   </a>
                 </div>
               </div>
