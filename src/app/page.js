@@ -12,7 +12,7 @@ import design from "../../public/design.png"
 import code from "../../public/code.png"
 import consulting from "../../public/consulting.png"
 import img1 from "../../public/img1.png"
-import img3 from "../../public/img3.png"
+import img3 from "../../public/asthetic.png"
 import img5 from "../../public/img5.png"
 import img6 from "../../public/img6.png"
 import img10 from "../../public/img10.png"
@@ -123,8 +123,8 @@ export default function Home() {
               </div>
               <div className="grid grid-cols-1 gap-10 lg:grid-cols-2 xl:grid-cols-3">
                 <div className="w-full aspect-w-1 aspect-h-1">
-                  <a href="https://gabrieluser430.github.io/javascript-calculator/" target="_blank">
-                   <Image src={img6} className="rounded-lg object-cover w-full h-full" />
+                  <a href="https://www.studioesteticams.com.br/" target="_blank">
+                   <Image src={img3} className="rounded-lg object-cover w-full h-full" />
                   </a>
                 </div>
                 <div className="w-full aspect-w-1 aspect-h-1">
@@ -148,8 +148,8 @@ export default function Home() {
                   </a>
                 </div>
                 <div className="w-full aspect-w-1 aspect-h-1">
-                  <a href="https://moonlit-bombolone-c6e68a.netlify.app/" target="_blank">
-                  <Image src={img3} className="rounded-lg object-cover w-full h-full" />
+                  <a href="https://gabrieluser430.github.io/javascript-calculator/" target="_blank">
+                  <Image src={img6} className="rounded-lg object-cover w-full h-full" />
                   </a>
                 </div>
               </div>
