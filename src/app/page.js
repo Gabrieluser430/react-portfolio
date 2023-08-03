@@ -42,7 +42,7 @@ export default function Home() {
                 <div className="text-center p-10">
                   <h2 className="text-4xl py-2 text-teal-600 font-medium md:text-6xl dark:text-teal-400">Gabriel Oliveira</h2>
                   <h3 className="text-2xl py-2 md:text-3xl dark:text-gray-200">Desenvolvedor Front-end</h3>
-                  <p className="text-md py-5 leading-8 text-gray-800 md:text-xl max-w-lg mx-auto dark:text-gray-200">Desenvolvedor e contribuidor de open-source. Junte-se a mim abaixo e vamos começar!</p>
+                  <p className="text-md py-5 leading-8 text-gray-800 md:text-xl max-w-lg mx-auto dark:text-gray-200">Desenvolvedor e Freelancer. Junte-se a mim abaixo e vamos começar!</p>
               </div>
               <div className="text-5xl flex justify-center gap-16 py-3 text-gray-600 dark:text-gray-200">
                 <a href="https://github.com/Gabrieluser430" target="_blank"><AiFillGithub /></a>
@@ -68,7 +68,7 @@ export default function Home() {
                 </p>
                 <p className="text-md py-2 leading-8 text-gray-800 dark:text-gray-200">
                   Ofereço uma ampla gama de serviços, incluindo design de marca,
-                  programação e ensino.
+                  freelancing e ensino.
                 </p>
               </div>
               <div className="lg:flex gap-10">
@@ -83,7 +83,7 @@ export default function Home() {
                   <p className="text-gray-800 py-1 dark:text-gray-200">CSS3</p>
                   <p className="text-gray-800 py-1 dark:text-gray-200">Bootstrap</p>
                   <p className="text-gray-800 py-1 dark:text-gray-200">tailwindCSS</p>
-                  <p className="text-gray-800 py-1 dark:text-gray-200">Sass</p>
+                  <p className="text-gray-800 py-1 dark:text-gray-200">SASS</p>
                 </div>
 
                 <div className=" text-center shadow-lg p-10 rounded-xl my-10">
@@ -96,7 +96,8 @@ export default function Home() {
                   <h4 className="py-4 text-teal-600 dark:text-teal-400">Ferramentas que utilizo</h4>
                   <p className="text-gray-800 py-1 dark:text-gray-200">JavaScript</p>
                   <p className="text-gray-800 py-1 dark:text-gray-200">React</p>
-                  <p className="text-gray-800 py-1 dark:text-gray-200">Vite e Next.js (building e scaffolding)</p>
+                  <p className="text-gray-800 py-1 dark:text-gray-200">Vite</p>
+                  <p className="text-gray-800 py-1 dark:text-gray-200">Next</p>
                 </div>
 
                 <div className=" text-center shadow-lg p-10 rounded-xl my-10">
@@ -108,8 +109,8 @@ export default function Home() {
                   <p className="text-gray-800 py-1 dark:text-gray-200">Inglês avançado</p>
                   <p className="text-gray-800 py-1 dark:text-gray-200">Git e GitHub</p>
                   <p className="text-gray-800 py-1 dark:text-gray-200">Linux</p>
-                  <p className="text-gray-800 py-1 dark:text-gray-200">Java (estudando)</p>
-                  <p className="text-gray-800 py-1 dark:text-gray-200">Vue (estudando)</p>
+                  <p className="text-gray-800 py-1 dark:text-gray-200">Vitest</p>
+                  <p className="text-gray-800 py-1 dark:text-gray-200">Jest</p>
                 </div>
               </div>
             </section>
