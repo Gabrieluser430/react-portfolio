@@ -36,7 +36,7 @@ export default function Home() {
                     <h1 className="text-xl font-burtons dark:text-gray-200">Desenvolvido por Gabriel O.</h1>
                     <ul className="flex items-center">
                         <li className="cursor-pointer" onClick={toggleDarkMode}><BsFillMoonStarsFill className="dark:text-gray-200"/></li>
-                        <li><a className="bg-gradient-to-r from-cyan-500 to-teal-500 text-white px-4 py-2 rounded ml-8" href="https://docs.google.com/document/d/1vF95p-E2o0XfHFRLDHhQqMaybcZIv79k/edit?usp=sharing&ouid=117072219727443763501&rtpof=true&sd=true" target="_blank">Currículo</a></li>
+                        <li><a className="bg-gradient-to-r from-cyan-500 to-teal-500 text-white px-4 py-2 rounded ml-8" href="https://docs.google.com/document/d/1q69ifgPZqVNzLKa7uf0jFWMSGw39QituwoMkE7m6mho/edit?usp=sharing" target="_blank">Currículo</a></li>
                     </ul>
                 </nav>
                 <div className="text-center p-10">
